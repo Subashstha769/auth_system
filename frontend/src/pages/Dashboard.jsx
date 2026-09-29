@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Dashboard(){
 
@@ -10,7 +10,7 @@ function Dashboard(){
     useEffect(() => {
         async function fetchUser(){
             try{
-                let response = await fetch("http://localhost/learn/backend/api/dashboard.php", {
+                let response = await fetch("http://localhost/auth_system/backend/api/dashboard.php", {
                     method: "POST",
                     credentials: "include"
                 });
@@ -37,7 +37,7 @@ function Dashboard(){
         e.preventDefault();
 
         try{
-            let response = await fetch("http://localhost/learn/backend/api/logout.php", {
+            let response = await fetch("http://localhost/auth_system/backend/api/logout.php", {
                 method: "POST",
                 credentials: "include"
             });

@@ -47,7 +47,7 @@ function Register() {
         e.preventDefault();
 
         try {
-            let response = await fetch("http://localhost/learn/backend/api/register.php", {
+            let response = await fetch("http://localhost/auth_system/backend/api/register.php", {
                 method: "POST",
                 credentials: "include",
                 headers: {

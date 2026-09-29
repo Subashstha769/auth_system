@@ -3,7 +3,7 @@
 
 $db_server = "localhost";
 $db_username = "root";
-$db_password = "";
+$db_password = "root";
 $db_name = "auth_system";
 
 // Creating Connection ....
